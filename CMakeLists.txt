@@ -1,0 +1,5 @@
+﻿cmake_minimum_required (VERSION 3.8)
+project ("TestingBasicDoublyLinkedListFunctions")
+add_executable(TestingBasicDoublyLinkedListFunctions TestingBasicDoublyLinkedListFunctions.cpp TestingBasicDoublyLinkedListFunctions.h)
+add_subdirectory(./Catch2 cat-build)
+target_link_libraries(TestingBasicDoublyLinkedListFunctions PRIVATE Catch2::Catch2)
